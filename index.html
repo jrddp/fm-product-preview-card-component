@@ -15,16 +15,21 @@
       rel="stylesheet"
     />
   </head>
-  <body class="flex items-center justify-center bg-background min-h-dvh text-body">
-    <main class="grid max-w-xl grid-cols-2 bg-white rounded-lg">
-      <div class="relative h-full overflow-hidden">
+  <body class="flex items-center justify-center p-4 bg-background min-h-dvh text-body">
+    <main class="sm:grid sm:grid-cols-2 max-w-xl bg-white rounded-lg">
+      <div class="relative overflow-hidden h-60 sm:h-full">
         <img
-          class="absolute object-cover rounded-l-lg size-full"
+          class="absolute hidden object-cover rounded-l-lg size-full sm:block"
           src="images/image-product-desktop.jpg"
           alt="Grabrielle Essence Eau De Parfum"
         />
+        <img
+          class="absolute object-cover rounded-t-lg size-full sm:hidden"
+          src="images/image-product-mobile.jpg"
+          alt="Grabrielle Essence Eau De Parfum"
+        />
       </div>
-      <div class="flex flex-col gap-6 p-6">
+      <div class="flex flex-col gap-4 p-4 py-6 sm:gap-6 sm:px-6">
         <p class="uppercase tracking-[0.3em] text-muted text-xs">Perfume</p>
 
         <h1 class="pr-8 font-serif text-3xl leading-none">Gabrielle Essence Eau De Parfum</h1>
@@ -53,7 +58,7 @@
       </div>
     </main>
 
-    <footer class="absolute flex justify-center w-full gap-1 bottom-4">
+    <footer class="absolute flex items-center justify-center w-full gap-1 bottom-4 text-xs sm:text-body">
       <div>
         Challenge by
         <a
@@ -64,7 +69,7 @@
         >.
       </div>
       <div>
-        Coded by <a class="hover:underline text-primary" href="https://jrddp.me">Your Name Here</a>.
+        Coded by <a class="hover:underline text-primary" href="https://jrddp.me">Jared Peters</a>.
       </div>
     </footer>
   </body>
