@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <link rel="stylesheet" href="css/output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Fraunces:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="flex items-center justify-center bg-background min-h-dvh text-body">
+    <main class="grid max-w-xl grid-cols-2 bg-white rounded-lg">
+      <div class="relative h-full overflow-hidden">
+        <img
+          class="absolute object-cover rounded-l-lg size-full"
+          src="images/image-product-desktop.jpg"
+          alt="Grabrielle Essence Eau De Parfum"
+        />
+      </div>
+      <div class="flex flex-col gap-6 p-6">
+        <p class="uppercase tracking-[0.3em] text-muted text-xs">Perfume</p>
+
+        <h1 class="pr-8 font-serif text-3xl leading-none">Gabrielle Essence Eau De Parfum</h1>
+
+        <p class="text-muted">
+          A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator
+          for the House of CHANEL.
+        </p>
+
+        <div class="flex items-center gap-4">
+          <div class="font-serif text-3xl text-primary">$149.99</div>
+          <div class="text-xs line-through text-muted">$169.99</div>
+        </div>
+
+        <button
+          class="flex items-center justify-center w-full gap-2 p-2 py-3 text-white transition-colors rounded-md bg-primary hover:bg-primary-dark"
+        >
+          <svg class="" width="15" height="16" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z"
+              fill="#FFF"
+            />
+          </svg>
+          Add to Cart
+        </button>
+      </div>
+    </main>
+
+    <footer class="absolute flex justify-center w-full gap-1 bottom-4">
+      <div>
+        Challenge by
+        <a
+          class="hover:underline text-primary"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          >Frontend Mentor</a
+        >.
+      </div>
+      <div>
+        Coded by <a class="hover:underline text-primary" href="https://jrddp.me">Your Name Here</a>.
+      </div>
+    </footer>
+  </body>
+</html>
